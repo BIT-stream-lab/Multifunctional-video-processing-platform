@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DDRConfig>
+    <GeneralConfig>
+        <Type>PH1_LOGIC_DDR_SDRAM</Type>
+        <Version>3.0</Version>
+        <Device>PH1A90SBG484</Device>
+        <create_VHDL>false</create_VHDL>
+        <inst>ddr_ip</inst>
+        <MEM_PROTOCOL>DDR3</MEM_PROTOCOL>
+        <CTRL_PHY_MODE>MC and Standard PHY</CTRL_PHY_MODE>
+        <MULTI_CONTROLLER>1</MULTI_CONTROLLER>
+        <CTRL_INDEX>2-1</CTRL_INDEX>
+        <EXPORT_SDC_FILE>ENABLE</EXPORT_SDC_FILE>
+        <AXI4_INTERFACE>ENABLE</AXI4_INTERFACE>
+        <ID_WIDTH>4</ID_WIDTH>
+        <MEMCLK_FREQUENCY>533.000000</MEMCLK_FREQUENCY>
+        <MEMCLK_FREQUENCY_UNIT>MHz</MEMCLK_FREQUENCY_UNIT>
+        <PLL_FRECLK_FREQ>25.000000</PLL_FRECLK_FREQ>
+        <PLL_FRECLK_FREQ_UNIT>MHz</PLL_FRECLK_FREQ_UNIT>
+        <PLL_LOCATION>Bank31</PLL_LOCATION>
+        <PLL_SHARE_ENABLE>false</PLL_SHARE_ENABLE>
+        <PHY_CTRL_CLK_RATIO>4:1</PHY_CTRL_CLK_RATIO>
+        <USE_CLK1>false</USE_CLK1>
+        <USE_CLK2>false</USE_CLK2>
+        <USE_CLK3>false</USE_CLK3>
+        <USE_CLK4>false</USE_CLK4>
+        <CLK1>100.000000</CLK1>
+        <CLK2>100.000000</CLK2>
+        <CLK3>100.000000</CLK3>
+        <CLK4>100.000000</CLK4>
+        <CLK1_UNIT>MHz</CLK1_UNIT>
+        <CLK2_UNIT>MHz</CLK2_UNIT>
+        <CLK3_UNIT>MHz</CLK3_UNIT>
+        <CLK4_UNIT>MHz</CLK4_UNIT>
+        <ACTUAL_CLK1>100.000000</ACTUAL_CLK1>
+        <ACTUAL_CLK2>100.000000</ACTUAL_CLK2>
+        <ACTUAL_CLK3>100.000000</ACTUAL_CLK3>
+        <ACTUAL_CLK4>100.000000</ACTUAL_CLK4>
+        <MEMORY_PART>MT41J128M16JT-125</MEMORY_PART>
+        <MEM_VOLTAGE>1.5V</MEM_VOLTAGE>
+        <DATA_WIDTH>16</DATA_WIDTH>
+        <ECC>false</ECC>
+        <DATA_MASK>true</DATA_MASK>
+        <USER_ADDR_MAP>Row_Column_Bank</USER_ADDR_MAP>
+        <REORDER>Normal</REORDER>
+        <READ_BURST_TYPE>Sequential</READ_BURST_TYPE>
+        <OUTPUT_DRIVER_IMP>RZQ/6</OUTPUT_DRIVER_IMP>
+        <RTT_NOM>RZQ/4</RTT_NOM>
+        <INTERNAL_VREF>Enable</INTERNAL_VREF>
+        <DCI>DISABLE</DCI>
+        <DEBUG_CTRL>DISABLE</DEBUG_CTRL>
+        <EFFICIENCY_EQUALIZER>DISABLE</EFFICIENCY_EQUALIZER>
+        <CS_SEL>ENABLE</CS_SEL>
+        <PAR_ALERT_SEL>DISABLE</PAR_ALERT_SEL>
+        <RESET_SEL>ENABLE</RESET_SEL>
+        <PB_SELECTION_MODE>Pin</PB_SELECTION_MODE>
+        <PIN_SELECTION_LIST>L1,M3,K1,N2,K2,N3,K3,L3,R2,P1,U1,R3,T1,P2,R4,R1,M1,M2,N4,M5,L5,P4,Y9,W9,R7,AB6,U8,U6,W11,AA5,AA6,AB7,V9,V8,W6,AA11,U7,Y11,AA8,U12,AB8,AB10,AA10,V10,U10,Y6,AB11,T8</PIN_SELECTION_LIST>
+        <SYS_CLK_PN_PIN_NUM>None</SYS_CLK_PN_PIN_NUM>
+    </GeneralConfig>
+    <GeneratedFiles>
+        <ADC_FILE Enable="true">ddr_ip.adc</ADC_FILE>
+        <Verilog Enable="true">ddr_ip.v</Verilog>
+        <SDC_FILE Enable="true">ddr_ip.sdc</SDC_FILE>
+    </GeneratedFiles>
+</DDRConfig>

@@ -1,0 +1,200 @@
+standard
+***Report Model: design_top_wrapper Device: PH1A90SBG484***
+
+IO Statistics
+#IO                        56
+  #input                    3
+  #output                  31
+  #inout                   22
+
+Gate Statistics
+#Basic gates            16475
+  #and                    955
+  #nand                     0
+  #or                     584
+  #nor                      0
+  #xor                    217
+  #xnor                     0
+  #buf                      0
+  #not                    759
+  #bufif1                   0
+  #MX21                   961
+  #FADD                     0
+  #DFF                  12999
+  #LATCH                    0
+#MACRO_ADD                364
+#MACRO_EQ                 345
+#MACRO_MUX               4499
+#MACRO_OTHERS              10
+
+Report Hierarchy Area:
++--------------------------------------------------------------------------------------------------------------------+
+|Instance                                           |Module                                  |gates  |seq    |macros |
++--------------------------------------------------------------------------------------------------------------------+
+|top                                                |design_top_wrapper                      |3476   |12999  |719    |
+|  u_four_channel_viideo_splicer                    |four_channel_viideo_splicer             |394    |1501   |112    |
+|    u0_down_samping_2x2                            |down_samping_2x2                        |12     |31     |2      |
+|    u1_down_samping_2x2                            |down_samping_2x2                        |0      |16     |0      |
+|    u2_down_samping_2x2                            |down_samping_2x2                        |0      |16     |0      |
+|    u3_down_samping_2x2                            |down_samping_2x2                        |0      |16     |0      |
+|    u_uidbufw_interconnect                         |uidbufw_interconnect                    |26     |29     |0      |
+|    u_uivtc                                        |uivtc                                   |7      |29     |10     |
+|    uidbuf_u0                                      |uidbuf                                  |142    |462    |39     |
+|      fs_cap_R0                                    |fs_cap                                  |0      |5      |1      |
+|      fs_cap_W0                                    |fs_cap                                  |0      |5      |1      |
+|      u_rfifo                                      |rfifo                                   |41     |120    |6      |
+|        ram_inst                                   |ram_infer_rfifo                         |1      |16     |0      |
+|        rd_to_wr_cross_inst                        |fifo_cross_domain_addr_process_al_rfifo |19     |42     |0      |
+|        wr_to_rd_cross_inst                        |fifo_cross_domain_addr_process_al_rfifo |16     |36     |0      |
+|      u_wfifo                                      |wfifo                                   |37     |222    |6      |
+|        ram_inst                                   |ram_infer_wfifo                         |0      |128    |0      |
+|        rd_to_wr_cross_inst                        |fifo_cross_domain_addr_process_al_wfifo |14     |32     |0      |
+|        wr_to_rd_cross_inst                        |fifo_cross_domain_addr_process_al_wfifo |17     |38     |0      |
+|    uidbuf_u1                                      |uidbuf_only_w                           |69     |279    |20     |
+|      u_wfifo                                      |wfifo                                   |37     |222    |6      |
+|        ram_inst                                   |ram_infer_wfifo                         |0      |128    |0      |
+|        rd_to_wr_cross_inst                        |fifo_cross_domain_addr_process_al_wfifo |14     |32     |0      |
+|        wr_to_rd_cross_inst                        |fifo_cross_domain_addr_process_al_wfifo |17     |38     |0      |
+|    uidbuf_u2                                      |uidbuf_only_w                           |69     |279    |20     |
+|      u_wfifo                                      |wfifo                                   |37     |222    |6      |
+|        ram_inst                                   |ram_infer_wfifo                         |0      |128    |0      |
+|        rd_to_wr_cross_inst                        |fifo_cross_domain_addr_process_al_wfifo |14     |32     |0      |
+|        wr_to_rd_cross_inst                        |fifo_cross_domain_addr_process_al_wfifo |17     |38     |0      |
+|    uidbuf_u3                                      |uidbuf_only_w                           |69     |279    |20     |
+|      u_wfifo                                      |wfifo                                   |37     |222    |6      |
+|        ram_inst                                   |ram_infer_wfifo                         |0      |128    |0      |
+|        rd_to_wr_cross_inst                        |fifo_cross_domain_addr_process_al_wfifo |14     |32     |0      |
+|        wr_to_rd_cross_inst                        |fifo_cross_domain_addr_process_al_wfifo |17     |38     |0      |
+|    uisetvbuf_u0                                   |uisetvbuf                               |0      |0      |1      |
+|  u_hdmi_tx                                        |hdmi_tx                                 |335    |954    |148    |
+|    u_hdmi2phy_wrapper                             |hdmi_phy_wrapper                        |2      |47     |4      |
+|      u0_lane_lvds_10_1                            |lane_lvds_10_1                          |2      |18     |1      |
+|      u1_lane_lvds_10_1                            |lane_lvds_10_1                          |0      |12     |1      |
+|      u2_lane_lvds_10_1                            |lane_lvds_10_1                          |0      |12     |1      |
+|      u3_lane_lvds_10_1                            |lane_lvds_10_1                          |0      |5      |1      |
+|    u_hdmi_tx_controller_wrapper                   |hdmi_tx_controller_wrapper              |330    |870    |144    |
+|      u0_hdmi_tmds_encode                          |hdmi_tmds_encode                        |96     |161    |39     |
+|      u1_hdmi_tmds_encode                          |hdmi_tmds_encode                        |48     |93     |38     |
+|      u2_hdmi_tmds_encode                          |hdmi_tmds_encode                        |52     |93     |38     |
+|      u_hdmi_data_distribution                     |hdmi_data_distribution                  |0      |39     |0      |
+|      u_hdmi_island_data_assemble                  |hdmi_island_data_assemble               |5      |298    |2      |
+|      u_hdmi_island_data_gen                       |hdmi_island_data_gen                    |101    |106    |3      |
+|        U_audio_sample_packet_2_channel            |audio_sample_packet_2_channel           |2      |1      |1      |
+|          u_w64_d1024_fifo                         |w64_d1024_fifo                          |0      |0      |1      |
+|        u_audio_clock_regeneration_packet          |audio_clock_regeneration_packet         |0      |2      |0      |
+|      u_hdmi_video_data_assemble                   |hdmi_video_data_assemble                |0      |40     |0      |
+|      u_hdmi_video_source                          |hdmi_video_source                       |18     |38     |23     |
+|      u_video_axi_stream_receiver                  |video_axi_stream_receiver               |10     |2      |1      |
+|        u_w24_d1024_fifo                           |w24_d1024_fifo                          |0      |0      |1      |
+|  u_pll                                            |pll                                     |0      |0      |1      |
+|  u_uifdma_axi_ddr                                 |uifdma_axi_ddr                          |2725   |10425  |443    |
+|    u_ddr_phy                                      |ddr_ip                                  |2581   |10224  |418    |
+|      u_alc_mc_top                                 |alc_mc_top                              |1351   |2185   |231    |
+|        bgr[0]$u_page_ctrl                         |alc_page_ctrl                           |169    |398    |31     |
+|        bgr[1]$u_page_ctrl                         |alc_page_ctrl                           |156    |340    |31     |
+|        bgr[2]$u_page_ctrl                         |alc_page_ctrl                           |155    |340    |31     |
+|        bgr[3]$u_page_ctrl                         |alc_page_ctrl                           |155    |340    |31     |
+|        u_act_timer                                |alc_act_timer                           |14     |10     |4      |
+|          u_act_check                              |alc_act_check                           |7      |10     |0      |
+|        u_arb_act                                  |alc_arb_act                             |16     |8      |2      |
+|        u_arb_cas                                  |alc_arb_cas                             |48     |12     |4      |
+|        u_arb_mux_act                              |alc_arb_mux_act                         |0      |0      |0      |
+|        u_arb_mux_cas                              |alc_arb_mux_cas                         |0      |0      |0      |
+|        u_arb_mux_pre                              |alc_arb_mux_pre                         |287    |87     |32     |
+|          u_arb_pre                                |alc_arb_pre                             |11     |7      |0      |
+|          u_cmd_mux_pre                            |alc_cmd_mux_pre                         |0      |0      |0      |
+|        u_arb_rd_wr                                |alc_arb_rd_wr                           |113    |94     |9      |
+|          u_wtr_check                              |alc_wtr_check                           |6      |3      |1      |
+|        u_axi_rx                                   |alc_axi_rx_full                         |15     |53     |0      |
+|        u_cmd_scheduler                            |alc_cmd_scheduler                       |23     |0      |3      |
+|        u_rd_data                                  |alc_rd_data                             |61     |171    |34     |
+|          copies_of_sts_ram[0]$u_status_cpyA       |alc_ram32_x2                            |0      |0      |0      |
+|          copies_of_sts_ram[0]$u_status_cpyC       |alc_ram32_x2                            |0      |0      |0      |
+|          rd_buffer_ram[0]$u_rd_data_buf           |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[10]$u_rd_data_buf          |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[11]$u_rd_data_buf          |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[12]$u_rd_data_buf          |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[13]$u_rd_data_buf          |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[14]$u_rd_data_buf          |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[15]$u_rd_data_buf          |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[1]$u_rd_data_buf           |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[2]$u_rd_data_buf           |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[3]$u_rd_data_buf           |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[4]$u_rd_data_buf           |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[5]$u_rd_data_buf           |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[6]$u_rd_data_buf           |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[7]$u_rd_data_buf           |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[8]$u_rd_data_buf           |alc_ram32_x8                            |0      |0      |0      |
+|          rd_buffer_ram[9]$u_rd_data_buf           |alc_ram32_x8                            |0      |0      |0      |
+|        u_ref_ctrl                                 |alc_ref_ctrl                            |80     |32     |13     |
+|        u_wr_data                                  |alc_wr_data                             |55     |297    |6      |
+|          u_ptr_ram0                               |alc_ram16_x4                            |0      |0      |0      |
+|          u_ptr_ram1                               |alc_ram16_x4                            |0      |0      |0      |
+|          wr_buffer_ram[0]$u_data_ram              |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[10]$u_data_ram             |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[11]$u_data_ram             |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[12]$u_data_ram             |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[13]$u_data_ram             |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[14]$u_data_ram             |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[15]$u_data_ram             |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[1]$u_data_ram              |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[2]$u_data_ram              |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[3]$u_data_ram              |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[4]$u_data_ram              |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[5]$u_data_ram              |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[6]$u_data_ram              |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[7]$u_data_ram              |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[8]$u_data_ram              |alc_ram16_x8                            |0      |0      |0      |
+|          wr_buffer_ram[9]$u_data_ram              |alc_ram16_x8                            |0      |0      |0      |
+|      u_axi_bridge                                 |alc_axi_bridge_top                      |113    |4551   |18     |
+|        axi_ar_channel                             |alc_axi_ar_channel                      |21     |75     |2      |
+|          ar_cmd_fsm                               |alc_axi_ar_fsm                          |8      |1      |0      |
+|          u_axi_raddr_gen                          |alc_axi_addr_gen                        |12     |36     |2      |
+|            u_waddr_incr_cmd                       |alc_axi_incr_cmd                        |11     |36     |2      |
+|        axi_aw_channel                             |alc_axi_aw_channel                      |21     |74     |2      |
+|          aw_cmd_fsm                               |alc_axi_aw_fsm                          |8      |1      |0      |
+|          u_axi_waddr_gen                          |alc_axi_addr_gen                        |12     |36     |2      |
+|            u_waddr_incr_cmd                       |alc_axi_incr_cmd                        |11     |36     |2      |
+|        axi_cmd_arb                                |alc_axi_cmd_arb                         |40     |31     |4      |
+|        axi_r_channel                              |alc_axi_r_channel                       |24     |4110   |10     |
+|          rd_data_fifo                             |alc_axi_fifo                            |6      |4102   |5      |
+|          rd_respond_fifo                          |alc_axi_fifo                            |6      |6      |5      |
+|        axi_w_channel                              |alc_axi_w_channel                       |5      |259    |0      |
+|      u_dfi_retiming                               |alc_dfi_retiming                        |381    |1081   |8      |
+|      u_ph1_logic_standard_phy                     |ph1_ddrphy_ip_top                       |736    |2407   |161    |
+|        u_clk                                      |ph1_logic_clk_management                |1      |0      |2      |
+|          u_pll0                                   |ph1_logic_pll0                          |0      |0      |0      |
+|          u_pll1                                   |ph1_logic_pll1                          |0      |0      |1      |
+|        u_ddrphy_standard                          |ph1_logic_ddrphy_standard               |151    |813    |12     |
+|          u_apb_mux                                |ph1_logic_apb_mux_1_3                   |101    |0      |2      |
+|          u_bus_matrix                             |ph1_logic_bus_matrix                    |40     |813    |0      |
+|          u_ddrphy                                 |ph1_logic_ddrphy_streamlined            |10     |0      |10     |
+|        u_mcu                                      |ph1_logic_sopc_top                      |584    |978    |147    |
+|          u_cpu                                    |ph1_logic_SOPC                          |584    |978    |147    |
+|            apb3Router_1                           |ph1_logic_Apb3Router                    |2      |3      |1      |
+|            io_apb_decoder                         |ph1_logic_Apb3Decoder                   |9      |0      |6      |
+|            io_rst_buffercc                        |ph1_logic_BufferCC                      |0      |2      |0      |
+|            system_apbBridge                       |ph1_logic_PipelinedMemoryBusToApbBridge |17     |97     |0      |
+|            system_cpu                             |ph1_logic_mcu                           |416    |650    |94     |
+|              IBusSimplePlugin_rspJoin_rspBuffer_c |ph1_logic_StreamFifoLowLatency          |4      |31     |0      |
+|            system_gpioCtrl                        |ph1_logic_SopcGpio                      |37     |64     |1      |
+|            system_mainBusArbiter                  |ph1_logic_MuraxMasterArbiter            |13     |2      |1      |
+|            system_ram                             |ph1_logic_AlcPipelinedMemoryBusRam      |2      |1      |1      |
+|              u_mcu_ram                            |ph1_logic_mcu_ram                       |0      |0      |1      |
+|            system_ramCtrl                         |ph1_logic_SopcUserRam                   |19     |0      |0      |
+|            system_timerCtrl                       |ph1_logic_SopcTimer                     |3      |33     |3      |
+|            system_uartCtrl                        |ph1_logic_apb_uart                      |48     |48     |34     |
+|              u_rx_fifo                            |ph1_logic_uart_fifo                     |3      |8      |7      |
+|              u_tx_fifo                            |ph1_logic_uart_fifo                     |4      |8      |7      |
+|              u_uart_rx                            |ph1_logic_uart_rx                       |14     |18     |10     |
+|                uart_baud_gen_rx_i0                |ph1_logic_uart_baud_gen                 |1      |6      |3      |
+|                uart_rx_ctl_i0                     |ph1_logic_uart_rx_ctl                   |11     |10     |7      |
+|              u_uart_tx                            |ph1_logic_uart_tx                       |18     |10     |8      |
+|                uart_tx_ctl_i0                     |ph1_logic_uart_tx_ctl                   |18     |10     |8      |
+|    uiFDMA_inst                                    |uiFDMA                                  |144    |201    |25     |
+|  u_uivtc                                          |uivtc                                   |1      |1      |2      |
+|  uitpg_inst_0                                     |uitpg_0                                 |13     |53     |11     |
+|  uitpg_inst_1                                     |uitpg_1                                 |0      |16     |0      |
+|  uitpg_inst_2                                     |uitpg_2                                 |0      |16     |0      |
+|  uitpg_inst_3                                     |uitpg_3                                 |0      |16     |0      |
++--------------------------------------------------------------------------------------------------------------------+

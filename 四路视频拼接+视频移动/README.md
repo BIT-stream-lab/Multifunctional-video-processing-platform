@@ -1,4 +1,6 @@
-四分屏显示+分屏时视频自动移动可以分成两个部分，四路视频源的拼接工程文件见01_four_channel_viideo_splicer文件夹
+四分屏显示+分屏时视频自动移动可以分成两个部分
+
+四路视频源的拼接工程文件见01_four_channel_viideo_splicer文件夹
 
 四路视频拼接+视频移动见02_four_channel_viideo_splicer_move文件夹
 

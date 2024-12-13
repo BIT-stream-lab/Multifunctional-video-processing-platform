@@ -1,0 +1,57 @@
+Location         : C:\HIT\personal_learn\open_source\02_four_channel_viideo_splicer_move\td_project\fpga_prj_Runs\syn_1
+Running with     : Tang Dynasty v6.0.117864
+                   Copyright (c) 2012-2024 Anlogic Inc.
+Top Model        : design_top_wrapper
+Device           : PH1A90SBG484
+Speed            : 2
+
+Timing Mode      : basic
+Setup            : WNS  -567ps  TNS   -13318ps  NUM_FEPS    34
+Hold             : WNS    46ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+-----------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time(s)  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+-----------------------------------------------------------------------------------------------------
+  optimize_gate  |    1     |    117(58%)    |   110(58%)    |       2744        |       2981        
+  optimize_rtl   |    1     |    75(37%)     |    72(38%)    |       2058        |       2830        
+  import_device  |    1     |     7(3%)      |     5(2%)     |       1328        |       1360        
+    read_adc     |    1     |     0(0%)      |     0(0%)     |       1712        |       1876        
+    read_sdc     |    2     |     0(0%)      |     0(0%)     |       2061        |       2830        
+-----------------------------------------------------------------------------------------------------
+      total      |    6     |      199       |      187      |       2744        |       2981        
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |         -567                |
+|     Setup TNS             |       -13318                |
+|     Num of violated S-EP  |           34                |
+|     Hold WNS              |           46                |
+|     Hold TNS              |            0                |
+|     Num of violated H-EP  |            0                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #registers            |        13488                |
+|     #luts                 |         7341                |
+|     #lut1                 |          128                |
+|     #lut1(~A)             |          128                |
+|     #slices               |         2466                |
+|     slices percentage     |        3.83%                |
+|     #RAMs                 |           44                |
+|     #DSPs                 |            0                |
+|     #f7mux                |        1.74%                |
+|     #MACROs               |          389                |
+|     #insts in MACRO       |         2788                |
+-----------------------------------------------------------
+| Top 10% datanet fanout#   |        41.37                |
+-----------------------------------------------------------
+| Over-quota path num*      |                             |
+|     Total                 |            0                |
+-----------------------------------------------------------
+| Rent**                    |                             |
+|     u_four_channel_vii... |         0.71                |
+-----------------------------------------------------------
+Report gate stage QoR done.
+

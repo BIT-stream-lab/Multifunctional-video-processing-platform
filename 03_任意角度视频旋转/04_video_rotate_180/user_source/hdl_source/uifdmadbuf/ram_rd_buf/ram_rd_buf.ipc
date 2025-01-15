@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<BramConfig>
+    <AL006>
+        <A_ASYNC>SYNC</A_ASYNC>
+        <A_OREGSET>SET</A_OREGSET>
+        <A_OSRMODE>ASYNC</A_OSRMODE>
+        <B_ASYNC>SYNC</B_ASYNC>
+        <B_OREGSET>SET</B_OREGSET>
+        <B_OSRMODE>ASYNC</B_OSRMODE>
+        <CLK_MODE>ASYNC</CLK_MODE>
+        <ECC>DISABLE</ECC>
+        <ECC_D>DISABLE</ECC_D>
+        <ECC_DBITERRINJ>DISABLE</ECC_DBITERRINJ>
+        <ECC_SBITERRINJ>DISABLE</ECC_SBITERRINJ>
+        <SSROVERCE>DISABLE</SSROVERCE>
+    </AL006>
+    <FillMemoryInitValues>
+        <fill_all>NONE</fill_all>
+    </FillMemoryInitValues>
+    <GeneralConfig>
+        <Device>PH1A90SBG484</Device>
+        <Type>PH1_LOGIC_ERAM</Type>
+        <create_VHDL>true</create_VHDL>
+        <inst>ram_rd_buf</inst>
+    </GeneralConfig>
+    <GeneralOption>
+        <byte_write>none</byte_write>
+        <debug_enable>NO</debug_enable>
+        <pack_enable>NO</pack_enable>
+    </GeneralOption>
+    <ImplementOption>
+        <imp_type>20K</imp_type>
+    </ImplementOption>
+    <MemoryType>
+        <mem_type>PDPW</mem_type>
+    </MemoryType>
+    <PortAOption>
+        <depth_a>1024</depth_a>
+        <enable_a>disable</enable_a>
+        <enable_wea>enable</enable_wea>
+        <mode_a>NORMAL</mode_a>
+        <register_a>None</register_a>
+        <width_a>16</width_a>
+    </PortAOption>
+    <PortBOption>
+        <depth_b>1024</depth_b>
+        <enable_b>disable</enable_b>
+        <mode_b>NORMAL</mode_b>
+        <register_b>None</register_b>
+        <width_b>16</width_b>
+    </PortBOption>
+    <GeneratedFiles>
+        <VHDL Enable="false">ram_rd_buf.vhd</VHDL>
+        <Verilog Enable="true">ram_rd_buf.v</Verilog>
+    </GeneratedFiles>
+</BramConfig>

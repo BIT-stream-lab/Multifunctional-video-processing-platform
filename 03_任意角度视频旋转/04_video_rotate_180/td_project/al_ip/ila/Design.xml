@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:anlogic.com="http" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+    <ipxact:vendor>anlogic.com</ipxact:vendor>
+    <ipxact:library>customized</ipxact:library>
+    <ipxact:name>design_ila</ipxact:name>
+    <ipxact:version>1.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>ChipWatcher_e89d8dc9dd72_Inst</ipxact:instanceName>
+            <ipxact:componentRef vendor="anlogic.com" library="ip" name="ChipWatcher" version="1.0"/>
+            <ipxact:configurableElementValues>
+                <ipxact:configurableElementValue referenceId="CWC_BUS_NUM">6</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P0_Available">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P1_Available">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P2_Available">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P3_Available">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P4_Available">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P5_Available">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P6_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P7_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P8_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P9_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P10_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P11_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P12_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P13_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P14_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P15_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P16_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P17_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P18_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P19_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P20_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P21_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P22_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P23_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P24_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P25_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P26_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P27_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P28_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P29_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P30_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P31_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P32_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P33_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P34_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P35_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P36_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P37_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P38_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P39_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P40_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P41_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P42_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P43_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P44_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P45_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P46_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P47_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P48_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P49_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P50_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P51_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P52_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P53_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P54_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P55_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P56_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P57_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P58_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P59_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P60_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P61_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P62_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="P63_Available">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe_Width">10 1 15 10 1 15 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe0_WIDTH">10</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe1_WIDTH">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe2_WIDTH">15</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe3_WIDTH">10</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe4_WIDTH">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe5_WIDTH">15</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe0_Data_Enable">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe1_Data_Enable">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe2_Data_Enable">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe3_Data_Enable">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe4_Data_Enable">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe5_Data_Enable">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe_Data_Enable">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe0_Trigger_Enable">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe1_Trigger_Enable">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe2_Trigger_Enable">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe3_Trigger_Enable">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe4_Trigger_Enable">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe5_Trigger_Enable">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Probe_Trigger_Enable">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="RAM_DATA_DEPTH">4096</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="INPUT_PIPE_NUM">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="OUTPUT_PIPE_NUM">0</ipxact:configurableElementValue>
+            </ipxact:configurableElementValues>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>probe0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="ChipWatcher_e89d8dc9dd72_Inst" portRef="probe0"/>
+                <ipxact:externalPortReference portRef="probe0"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>probe1</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="ChipWatcher_e89d8dc9dd72_Inst" portRef="probe1"/>
+                <ipxact:externalPortReference portRef="probe1"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>probe2</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="ChipWatcher_e89d8dc9dd72_Inst" portRef="probe2"/>
+                <ipxact:externalPortReference portRef="probe2"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>probe3</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="ChipWatcher_e89d8dc9dd72_Inst" portRef="probe3"/>
+                <ipxact:externalPortReference portRef="probe3"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>probe4</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="ChipWatcher_e89d8dc9dd72_Inst" portRef="probe4"/>
+                <ipxact:externalPortReference portRef="probe4"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>probe5</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="ChipWatcher_e89d8dc9dd72_Inst" portRef="probe5"/>
+                <ipxact:externalPortReference portRef="probe5"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>clk</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="ChipWatcher_e89d8dc9dd72_Inst" portRef="clk"/>
+                <ipxact:externalPortReference portRef="clk"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+    <ipxact:vendorExtensions>
+        <anlogic.com:device>PH1A90SBG484</anlogic.com:device>
+        <anlogic.com:speed>-2</anlogic.com:speed>
+        <anlogic.com:displayname>Chip Watcher</anlogic.com:displayname>
+        <anlogic.com:ipGenVersion>1.0</anlogic.com:ipGenVersion>
+    </ipxact:vendorExtensions>
+</ipxact:design>

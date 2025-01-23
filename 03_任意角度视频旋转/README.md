@@ -12,3 +12,5 @@
 
 
 关于180度视频实时旋转方案实现讲解，博客地址如下：[FPGA实现视频180度实时旋转](https://blog.csdn.net/weixin_53015183/article/details/145122071?spm=1001.2014.3001.5502)
+
+关于90/270度视频旋转方案实现讲解，博客地址如下：[FPGA实现视频90/270度旋转](https://blog.csdn.net/weixin_53015183/article/details/145321324?spm=1001.2014.3001.5502)

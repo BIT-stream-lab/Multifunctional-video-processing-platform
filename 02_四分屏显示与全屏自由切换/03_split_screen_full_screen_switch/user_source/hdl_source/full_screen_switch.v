@@ -175,9 +175,9 @@ end
 
 reg full_rstn;
 
-//复位处理，什么时候复位？在没有进行写请求/读请求时进行复位
+//复位处理，什么时候复位？在没有进行写请求/读请求/写busy不忙/读busy不忙时进行复位
 always @(posedge O_axi_clk) begin
-	if (fdma_wareq_full == 1'b0 && fdma_rareq_full == 1'b0) begin
+	if (fdma_wareq_full == 1'b0 && fdma_rareq_full == 1'b0 && fdma_wbusy_full == 1'b0 && fdma_rbusy_full == 1'b0) begin
 		full_rstn <= full_rstn_dly2;
 	end
 end
@@ -189,7 +189,7 @@ reg video_2_rstn;
 reg video_3_rstn;
 
 always @(posedge O_axi_clk) begin
-	if (fdma_wareq_full == 1'b0 && fdma_rareq_full == 1'b0) begin
+	if (fdma_wareq_full == 1'b0 && fdma_rareq_full == 1'b0 && fdma_wbusy_full == 1'b0 && fdma_rbusy_full == 1'b0) begin
 		if (~full_rstn_dly2) begin
 			video_0_rstn <= 1'b0;
 			video_1_rstn <= 1'b0;

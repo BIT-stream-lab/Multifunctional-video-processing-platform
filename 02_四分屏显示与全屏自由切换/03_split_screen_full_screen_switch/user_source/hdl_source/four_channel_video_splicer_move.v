@@ -101,9 +101,9 @@ always@(posedge O_axi_clk)begin
 end
 
 reg split_rstn;
-//复位处理，什么时候复位？在没有进行写请求/读请求时进行复位
+//复位处理，什么时候复位？在没有进行写请求/读请求/写busy不忙/读busy不忙时进行复位
 always @(posedge O_axi_clk) begin
-	if (fdma_wareq_split == 1'b0 && fdma_rareq_split == 1'b0) begin
+	if (fdma_wareq_split == 1'b0 && fdma_rareq_split == 1'b0 && fdma_wbusy_split == 1'b0 && fdma_rbusy_split == 1'b0) begin
 		split_rstn <= split_rstn_dly2;
 	end
 end
